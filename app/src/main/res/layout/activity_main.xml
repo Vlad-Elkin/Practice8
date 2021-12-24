@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/caption_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sideALabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/side_a_text"
+        app:layout_constraintTop_toBottomOf="@+id/caption" />
+
+    <EditText
+        android:id="@+id/sideA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/sideALabel" />
+
+    <TextView
+        android:id="@+id/sideBLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/side_b_text"
+        app:layout_constraintTop_toBottomOf="@+id/sideA" />
+
+    <EditText
+        android:id="@+id/sideB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/sideBLabel" />
+
+    <TextView
+        android:id="@+id/sideCLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/side_c_text"
+        app:layout_constraintTop_toBottomOf="@+id/sideB"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/sideC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/sideCLabel"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/sideC"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/getSolution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/get_solution_text"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/solution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/getSolution"
+        tools:layout_editor_absoluteX="0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
